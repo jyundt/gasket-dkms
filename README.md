@@ -17,5 +17,7 @@ To install the package after enabling the repo:
 ```
 # yum install gasket-dkms
 ```
+Obligatory Copr status badge:
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/jyundt/gasket-dkms/package/gasket-dkms/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/jyundt/gasket-dkms/package/gasket-dkms/)
 
 Warning: I am not a kernel developer, I rarely build RPMs and I generally don't know what I'm doing. Use this package at your own risk.
