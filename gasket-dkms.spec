@@ -1,16 +1,16 @@
 %define module gasket
 %define version 1.0.0
-%define build 2
+%define build_id 3
 Name:           gasket-dkms
 Version:        %{version}
-Release:        %{build}%{?dist}
+Release:        %{build_id}%{?dist}
 Summary:        DKMS source for the gasket driver
 
 License:        GPLv2
 URL:            https://coral.ai/     
 Group:          System Environment/Kernel
 BuildArch:      noarch
-Source0:        https://github.com/jyundt/%{name}/archive/%{name}-%{version}-%{build}.tar.gz
+Source0:        https://github.com/jyundt/%{name}/archive/%{name}-%{version}-%{build_id}.tar.gz
 Patch0:         001_makefile.patch  
 
 Provides:       kmod(gasket.ko) = %{version}-%{release}
@@ -44,7 +44,7 @@ any number of additional write handles.) This is accomplished by
 tracking open and close data for each driver instance.
 
 %prep
-%setup -q -c 
+%setup -n %{name}-%{name}-%{version}-%{build_id}
 %patch0 -p0
 
 %build
