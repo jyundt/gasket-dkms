@@ -1,6 +1,6 @@
 %define module gasket
 %define version 1.0.0
-%define build_id 4
+%define build_id 5
 Name:           gasket-dkms
 Version:        %{version}
 Release:        %{build_id}%{?dist}
@@ -65,6 +65,9 @@ dkms remove -m %{module} -v %{version} --all --rpm_safe_upgrade
 
 
 %changelog
+* Thu Sep 24 2020 Jacob Yundt <jyundt@gmail.com> 1.0.0-5
+- Removing patch that modifies upstream driver (jyundt@gmail.com)
+
 * Thu Sep 24 2020 Jacob Yundt <jyundt@gmail.com> 1.0.0-4
 - Fixup for Patch0 URL (jyundt@gmail.com)
 
