@@ -67,6 +67,10 @@ dkms remove -m %{module} -v %{version} --all --rpm_safe_upgrade
 
 
 %changelog
+* Thu Sep 24 2020 Jacob Yundt <jyundt@gmail.com> 1.0.0-2
+- Fixup for GitHub source URL (jyundt@gmail.com)
+- Adding github release workflow (jyundt@gmail.com)
+
 * Thu Sep 24 2020 Jacob Yundt <jyundt@gmail.com> 1.0.0-1
 - Initial build based on in-tree 5.4.67 driver (3468bca1)
 
